@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/keymetrics/pmx.git"
+    "url": "https://github.com/shubhroshekhar/pm2-telegram-notification"
   },
   "config": {
-    "conf_var_1": true,
-    "conf_var_2": "myvalue"
+    "bot_token": "mytoken",
+    "notification_config": [{ "chat_id": "", "start": true,"stop": true, "restart": true, "logs": true, "error": true}]
   },
   "apps": [
     {
@@ -22,6 +22,6 @@
       "script": "app.js"
     }
   ],
-  "author": "Keymetrics Inc.",
-  "license": "MIT"
+  "author": "",
+  "license": "Apache License 2.0"
 }

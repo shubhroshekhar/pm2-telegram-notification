@@ -161,35 +161,38 @@ const pm2 = require('pm2');
 
 // });
 
-pmx.initModule();
+const mConfig = pmx.initModule();
 
 
 pm2.launchBus(function(err, bus) {
-  console.log('pm2-telegram-notification');
+  console.log('pm2-telegram-notification', mConfig);
+  
   // console.log('BUS--->', bus)
   bus.on('process:event', (data) => {
-    console.log('process:event-->data.event',data.event)
-    console.log('process:event-->data.process',data.process.name)
-    console.log('process:event-->data.data',data.data)
+    console.log('pm2-telegram-notification', mConfig);
+
+    // console.log('process:event-->data.event',data.event)
+    // console.log('process:event-->data.process',data.process.name)
+    // console.log('process:event-->data.data',data.data)
   });
-  bus.on('log:err',(data)=> {
-    console.log('log:err-->data.event',data.event)
-    console.log('log:err-->data.process',data.process.name)
-    console.log('log:err-->data.data',data.data)
-  })
+  // bus.on('log:err',(data)=> {
+  //   console.log('log:err-->data.event',data.event)
+  //   console.log('log:err-->data.process',data.process.name)
+  //   console.log('log:err-->data.data',data.data)
+  // })
   // bus.on('log:out',(data)=> {
   //   console.log('log:out-->data.event',data.event)
   //   console.log('log:out-->data.process',data.process.name)
   //   console.log('log:out-->data.data',data.data)
   // })
-  bus.on('pm2:kill',(data)=> {
-    console.log('pm2:kill-->data.event',data.event)
-    console.log('pm2:kill-->data.process',data.process.name)
-    console.log('pm2:kill-->data.data',data.data)
-  })
-  bus.on('process:exception',(data)=> {
-    console.log('process:exception-->data.event',data.event)
-    console.log('process:exception-->data.process',data.process.name)
-    console.log('process:exception-->data.data',data.data)
-  })
+  // bus.on('pm2:kill',(data)=> {
+  //   console.log('pm2:kill-->data.event',data.event)
+  //   console.log('pm2:kill-->data.process',data.process.name)
+  //   console.log('pm2:kill-->data.data',data.data)
+  // })
+  // bus.on('process:exception',(data)=> {
+  //   console.log('process:exception-->data.event',data.event)
+  //   console.log('process:exception-->data.process',data.process.name)
+  //   console.log('process:exception-->data.data',data.data)
+  // })
   });
