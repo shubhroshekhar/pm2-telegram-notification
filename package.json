@@ -13,8 +13,13 @@
   },
   "config": {
     "server_name": "",
-    "bot_token": "mytoken",
-    "notification_config": [{ "chat_id": "", "start": true,"stop": true, "restart": true, "logs": true, "error": true}]
+    "bot_token": "",
+    "chat_id": "",
+    "start": true,
+    "stop": true,
+    "restart": true,
+    "logs": true,
+    "error": true
   },
   "apps": [
     {
