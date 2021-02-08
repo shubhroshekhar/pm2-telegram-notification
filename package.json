@@ -12,6 +12,7 @@
     "url": "https://github.com/shubhroshekhar/pm2-telegram-notification"
   },
   "config": {
+    "server_name": "",
     "bot_token": "mytoken",
     "notification_config": [{ "chat_id": "", "start": true,"stop": true, "restart": true, "logs": true, "error": true}]
   },
