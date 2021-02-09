@@ -19,7 +19,10 @@
     "stop": true,
     "restart": true,
     "logs": true,
-    "error": true
+    "error": true,
+    "violationTime": 10000,
+    "violationCount": 8,
+    "debounce": 30000
   },
   "apps": [
     {
