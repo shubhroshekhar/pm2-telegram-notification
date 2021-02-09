@@ -165,18 +165,11 @@ const messenger = require('./src/messenger')
 
 const mConfig = pmx.initModule();
 const mess = messenger(mConfig);
-console.log('mess------->', mess);
 
 pm2.launchBus(function(err, bus) {
-  console.log('pm2-telegram-notification', mConfig);
   
-  // console.log('BUS--->', bus)
   bus.on('process:event', (data) => {
-    // console.log('pm2-telegram-notification', mConfig);
-    mess.send(data.event, data.process.name);
-    // console.log('process:event-->data.event',data.event)
-    // console.log('process:event-->data.process',data.process.name)
-    // console.log('process:event-->data.data',data.data)
+    mess.send({type: 'EVENT', data});
   });
   // bus.on('log:err',(data)=> {
   //   console.log('log:err-->data.event',data.event)
