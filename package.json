@@ -19,7 +19,11 @@
     "stop": true,
     "restart": true,
     "logs": true,
-    "error": true
+    "error": true,
+    "violation_time": 10000,
+    "violation_count": 8,
+    "debounce": 30000,
+    "telegram_message_length_limit": 1900
   },
   "apps": [
     {
