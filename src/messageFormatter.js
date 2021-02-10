@@ -42,9 +42,6 @@ const MessageFormatter = ({ type, data }, serverName) => {
     }
     message += `<i>${serviceName}</i> log\n<code>${log}</code>\n`;
   }
-  // if (count && count > 1) {
-  //   message += `(${count}) times\n`;
-  // }
   return message
 };
 

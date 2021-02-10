@@ -167,26 +167,10 @@ const mConfig = pmx.initModule();
 const mess = messenger(mConfig);
 
 pm2.launchBus(function(err, bus) {
-  
   bus.on('process:event', (data) => {
     mess.send({type: 'EVENT', data});
   });
   bus.on('log:err',(data)=> {
     mess.send({type: 'LOG_ERROR', data});
   })
-  // bus.on('log:out',(data)=> {
-  //   console.log('log:out-->data.event',data.event)
-  //   console.log('log:out-->data.process',data.process.name)
-  //   console.log('log:out-->data.data',data.data)
-  // })
-  // bus.on('pm2:kill',(data)=> {
-  //   console.log('pm2:kill-->data.event',data.event)
-  //   console.log('pm2:kill-->data.process',data.process.name)
-  //   console.log('pm2:kill-->data.data',data.data)
-  // })
-  // bus.on('process:exception',(data)=> {
-  //   console.log('process:exception-->data.event',data.event)
-  //   console.log('process:exception-->data.process',data.process.name)
-  //   console.log('process:exception-->data.data',data.data)
-  // })
   });
