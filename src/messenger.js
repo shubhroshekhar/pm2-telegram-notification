@@ -8,10 +8,25 @@ const send_message_to_telegram = (botId, chatId, message) => {
   console.log(message);
   console.log('----------------------------------------\n');
   if ( botId && chatId && message) {
-    const url = `https://api.telegram.org/bot${botId}/sendMessage?chat_id=-${chatId}&text=${encodeURI(message)}&parse_mode=html`
-    const req = https.request(url, res => {
+    
+    const data = JSON.stringify({
+      chat_id: `-${chatId}`,
+      text: message,
+      parse_mode:'html'
+    })
+    const options = {
+      hostname: 'api.telegram.org',
+      port: 443,
+      path: `/bot${botId}/sendMessage`,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': data.length
+      }
+    }
+    const req = https.request(options, res => {
       res.on('data', () => {
-        console.log("Message Sent");
+        console.log('Message Sent');
       })
     })
     
@@ -19,7 +34,9 @@ const send_message_to_telegram = (botId, chatId, message) => {
       console.error('Message Sent Error:-')
       console.error(error)
     })
-    req.end();
+    
+    req.write(data)
+    req.end()
   }
 }
 
