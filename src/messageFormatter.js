@@ -3,7 +3,7 @@
 const MessageFormatter = ({ type, data }, serverName) => {
   let message = '';
   if (serverName) {
-    message = `<b>Server : <u>${serverName}</u></b>\n`;
+    message = `\n\n<b>Server : <u>${serverName}</u></b>\n`;
   }
   if (type === 'EVENT') {
     const serviceName = data.process.name;
@@ -27,7 +27,20 @@ const MessageFormatter = ({ type, data }, serverName) => {
       case 'exit':
           return null;
     }
-    message += `<b>${serviceName}</b> ${event}\n`;
+    message += `<i>${serviceName}</i> ${event}\n`;
+  }
+
+  if (type === 'LOG_ERROR') {
+    const serviceName = data.process.name;
+    let log = data.data || "";
+    if (log.length > 3500) {
+      const logId = `LOG_ID-${parseInt(Math.random()*1000000000,10)}`;
+      console.log(logId);
+      console.log('\n');
+      console.log(log);
+      log =`${logId}\n${log.substring(0, 3500)}`;
+    }
+    message += `<i>${serviceName}</i> log\n<code>${log}</code>\n`;
   }
   // if (count && count > 1) {
   //   message += `(${count}) times\n`;

@@ -171,11 +171,9 @@ pm2.launchBus(function(err, bus) {
   bus.on('process:event', (data) => {
     mess.send({type: 'EVENT', data});
   });
-  // bus.on('log:err',(data)=> {
-  //   console.log('log:err-->data.event',data.event)
-  //   console.log('log:err-->data.process',data.process.name)
-  //   console.log('log:err-->data.data',data.data)
-  // })
+  bus.on('log:err',(data)=> {
+    mess.send({type: 'LOG_ERROR', data});
+  })
   // bus.on('log:out',(data)=> {
   //   console.log('log:out-->data.event',data.event)
   //   console.log('log:out-->data.process',data.process.name)
