@@ -1,6 +1,6 @@
 {
   "name": "pm2-telegram-notification",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Update pm2 Status in Telegram",
   "main": "app.js",
   "dependencies": {
@@ -21,7 +21,7 @@
     "violation_time": 10000,
     "violation_count": 8,
     "debounce": 30000
-    },
+  },
   "apps": [
     {
       "merge_logs": true,
