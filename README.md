@@ -20,8 +20,10 @@ works with pm2 process manager.
 --  `pm2 set pm2-telegram-notification:bot_token BOT_TOKEN`
 * configure chat id
 --  `pm2 set pm2-telegram-notification:chat_id CHAT_ID`
-    - if its a group chat id append g
+    - if its a group chat id append
+    
         eg: 
+     
         group chat _CHAT_ID_ = `123456` -> `g-123456`
         
         personal chat _CHAT_ID_ = `123456` -> `123456`
