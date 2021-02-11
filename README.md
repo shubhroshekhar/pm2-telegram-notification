@@ -1,3 +1,4 @@
+[![Bot API](https://img.shields.io/badge/Bot%20API-v.5.0-00aced.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
 # What is pm2-telegram-notification ?
 Send server logs to a telegram group/chat.
 works with pm2 process manager.
