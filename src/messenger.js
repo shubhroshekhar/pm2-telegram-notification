@@ -4,12 +4,9 @@ const https = require('https')
 const messageFormatter = require('./messageFormatter');
 
 const send_message_to_telegram = (botId, chatId, message) => {
-  // console.log('----------------------------------------\n');
-  // console.log(message);
-  // console.log('----------------------------------------\n');
   if (botId && chatId && message) {
     const data = JSON.stringify({
-      chat_id: `-${chatId}`,
+      chat_id: `${chatId}`.replace("g",""),
       text: message,
       parse_mode:'html'
     })
