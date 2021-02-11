@@ -11,7 +11,7 @@ works with pm2 process manager.
 * create a telegram bot [link](https://core.telegram.org/bots#creating-a-new-bot)
 * add that bot to a group if you want to send logs to a group
 * get chat_id
--- to get chat_id use `https://api.telegram.org/bot<BOT_TOKEN>/getUpdates` api
+    - to get chat_id use `https://api.telegram.org/bot<BOT_TOKEN>/getUpdates` api
 
 ## pm2-telegram-notification setup
 * install pm2-telegram-notification
