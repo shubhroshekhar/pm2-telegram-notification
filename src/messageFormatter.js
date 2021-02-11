@@ -52,7 +52,7 @@ const MessageFormatter = ({ type, data }, config) => {
     const serviceName = data.process.name;
     let log = data.data || "";
     if (log.length > 3500) {
-      const logId = `LOG_ID-${parseInt(Math.random()*1000000000,10)}`;
+      const logId = `LOG_ID-${parseInt(Math.random()*1000000000,10)}${new Date().getTime()}`;
       console.log(logId);
       console.log('\n');
       console.log(log);

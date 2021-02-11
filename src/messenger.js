@@ -4,12 +4,9 @@ const https = require('https')
 const messageFormatter = require('./messageFormatter');
 
 const send_message_to_telegram = (botId, chatId, message) => {
-  // console.log('----------------------------------------\n');
-  // console.log(message);
-  // console.log('----------------------------------------\n');
   if (botId && chatId && message) {
     const data = JSON.stringify({
-      chat_id: `-${chatId}`,
+      chat_id: `${chatId}`.replace("g",""),
       text: message,
       parse_mode:'html'
     })
@@ -60,7 +57,7 @@ function DebounceEngine (config) {
   const violation_time=config.violation_time || config.violation_time !==0 ? 5000: config.violation_time;
   const violation_count=config.violation_count || config.violation_count !==0 ? 8: config.violation_count;
   const debounce_time=config.debounce || config.debounce !==0 ? 30000: config.debounce;
-  const telegram_message_length_limit = config.telegram_message_length_limit || config.telegram_message_length_limit !==0 ? 1900: config.telegram_message_length_limit;
+  const telegram_message_length_limit = 3500;
 
 
   const init = () => {
