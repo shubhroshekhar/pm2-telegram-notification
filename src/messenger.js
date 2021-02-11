@@ -4,14 +4,28 @@ const https = require('https')
 const messageFormatter = require('./messageFormatter');
 
 const send_message_to_telegram = (botId, chatId, message) => {
-  console.log('----------------------------------------\n');
-  console.log(message);
-  console.log('----------------------------------------\n');
-  if ( botId && chatId && message) {
-    const url = `https://api.telegram.org/bot${botId}/sendMessage?chat_id=-${chatId}&text=${encodeURI(message)}&parse_mode=html`
-    const req = https.request(url, res => {
+  // console.log('----------------------------------------\n');
+  // console.log(message);
+  // console.log('----------------------------------------\n');
+  if (botId && chatId && message) {
+    const data = JSON.stringify({
+      chat_id: `-${chatId}`,
+      text: message,
+      parse_mode:'html'
+    })
+    const options = {
+      hostname: 'api.telegram.org',
+      port: 443,
+      path: `/bot${botId}/sendMessage`,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': data.length
+      }
+    }
+    const req = https.request(options, res => {
       res.on('data', () => {
-        console.log("Message Sent");
+        console.log('Message Sent');
       })
     })
     
@@ -19,7 +33,9 @@ const send_message_to_telegram = (botId, chatId, message) => {
       console.error('Message Sent Error:-')
       console.error(error)
     })
-    req.end();
+    
+    req.write(data)
+    req.end()
   }
 }
 
@@ -129,14 +145,11 @@ const Messenger = (config) => {
   console.log('Initializing pm2-telegram-notification')
   
   const debounce_engine = new DebounceEngine(config);
-  // console.log('messenger-config', config)
   const send = (data) => {
-    const msg = messageFormatter(data, config.server_name);
+    const msg = messageFormatter(data, config);
     self.messaging_mode = debounce_engine.is_debounce_needed()? messagingModes.collecting:messagingModes.instant;
     console.log('Messaging Mode set as='+self.messaging_mode);
     if (self.messaging_mode ==  messagingModes.instant) {
-      // console.log('TRIGGERED->message=>', message);
-      // console.log('TRIGGERED->pm2_event=>', pm2_event);
       send_message_to_telegram(config.bot_token, config.chat_id, msg)
     } else {
       debounce_engine.add_to_queue(msg);
