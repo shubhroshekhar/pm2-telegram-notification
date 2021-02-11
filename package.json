@@ -29,6 +29,10 @@
       "script": "app.js"
     }
   ],
-  "author": "",
+  "author": "Shubhro Shekhar <shubhroshekhar@gmail.com> (https://github.com/shubhroshekhar)",
+  "contributors": [
+    "Shubhro Shekhar (https://github.com/shubhroshekhar)",
+    "Navin Tellis (https://github.com/navintellis)"
+  ],
   "license": "Apache License 2.0"
 }
