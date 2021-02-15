@@ -2,8 +2,8 @@
 [![npm package](https://img.shields.io/npm/v/pm2-telegram-notification?logo=npm&style=flat-square)](https://www.npmjs.com/package/pm2-telegram-notification)
 [![Build Status](https://api.travis-ci.org/shubhroshekhar/pm2-telegram-notification.svg?branch=main&status=created)](https://travis-ci.org/github/shubhroshekhar/pm2-telegram-notification)
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
+<!-- [![Forks][forks-shield]][forks-url] -->
+<!-- [![Stargazers][stars-shield]][stars-url] -->
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 <!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
@@ -86,16 +86,16 @@ works with pm2 process manager.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/shubhroshekhar/pm2-telegram-notification.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/shubhroshekhar/pm2-telegram-notification.svg?style=flat-square
 [contributors-url]: https://github.com/shubhroshekhar/pm2-telegram-notification/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/shubhroshekhar/pm2-telegram-notification.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/shubhroshekhar/pm2-telegram-notification.svg?style=flat-square
 [forks-url]: https://github.com/shubhroshekhar/pm2-telegram-notification/network/members
-[stars-shield]: https://img.shields.io/github/stars/shubhroshekhar/pm2-telegram-notification.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/shubhroshekhar/pm2-telegram-notification.svg?style=flat-square
 [stars-url]: https://github.com/shubhroshekhar/pm2-telegram-notification/stargazers
-[issues-shield]: https://img.shields.io/github/issues/shubhroshekhar/pm2-telegram-notification.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/shubhroshekhar/pm2-telegram-notification.svg?style=flat-square
 [issues-url]: https://github.com/shubhroshekhar/pm2-telegram-notification/issues
-[license-shield]: https://img.shields.io/github/license/shubhroshekhar/pm2-telegram-notification.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/shubhroshekhar/pm2-telegram-notification.svg?style=flat-square
 [license-url]: https://github.com/shubhroshekhar/pm2-telegram-notification/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
