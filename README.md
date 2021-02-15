@@ -2,10 +2,11 @@
 [![npm package](https://img.shields.io/npm/v/pm2-telegram-notification?logo=npm&style=flat-square)](https://www.npmjs.com/package/pm2-telegram-notification)
 [![Build Status](https://api.travis-ci.org/shubhroshekhar/pm2-telegram-notification.svg?branch=main&status=created)](https://travis-ci.org/github/shubhroshekhar/pm2-telegram-notification)
 [![Contributors][contributors-shield]][contributors-url]
-<!-- [![Forks][forks-shield]][forks-url] -->
-<!-- [![Stargazers][stars-shield]][stars-url] -->
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+
+<!-- [![Forks][forks-shield]][forks-url] -->
+<!-- [![Stargazers][stars-shield]][stars-url] -->
 <!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
