@@ -4,11 +4,9 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center" style="background:#2b037a; padding-top:8px">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://pm2.keymetrics.io/assets/pm2-logo-1.png" alt="PM2" width="206" height="55">
-    <img src="https://lh3.googleusercontent.com/proxy/zX7P0TjmrhYkqJhWk-XdspvELjX_9WDPJgVFr72XTwconF__h83x8MHb2B9m5oGuCrWPIT5uwTVjp3wXIAtrB1xInxmtBQw" alt="PM2" width="55" height="55">
-    <img src="https://telegram.org/img/t_logo.png?1" alt="Telegram" width="55" height="55">
+<p align="center">
+  <a href="https://github.com/shubhroshekhar/pm2-telegram-notification">
+    <img src="images/logo.png" alt="pm2-telegram-notification" width="174" height="39.5">
   </a>
 
   <h1 align="center">pm2-telegram-notification</h1>
