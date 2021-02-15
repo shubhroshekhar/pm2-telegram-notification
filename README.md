@@ -65,14 +65,14 @@ works with pm2 process manager.
 
 ##### Configuration definition 😎
 
-`server_name` = name of the server   
-`bot_token` = token generated with telegram as suggested in '_Telegram setup section_'
-`chat_id` = identifier corresponding to particular group or personal chat on which the notifications are expected to be posted, as explained in '_Telegram setup section_'
-`lifecycle` =  enabled alerts for lifecycle event handlers exposed by pm2, default is **true**
-`error` = enabled alerts for error handlers exposed by pm2, default is **true**,
-`error_log` = flag configuration to truncate log with ref-id above 3500 characters with a trace in logs annotated with that ref-id, default is **true**
-`violation_time` = time interval gap in which if another alerts occurs is said to count as violation, default is **10000**
-`violation_count` = violation count limit after which the notification is delayed with debounce time, default is **8**
-`debounce` = delay/debounce time applied in milliseconds to notification in case if violation count limit is reached, default is **30000**
+* `server_name` = name of the server   
+* `bot_token` = token generated with telegram as suggested in '_Telegram setup section_'
+* `chat_id` = identifier corresponding to particular group or personal chat on which the notifications are expected to be posted, as explained in '_Telegram setup section_'
+* `lifecycle` =  enabled alerts for lifecycle event handlers exposed by pm2, default is **true**
+* `error` = enabled alerts for error handlers exposed by pm2, default is **true**
+* `error_log` = flag configuration to truncate log with ref-id above 3500 characters with a trace in logs annotated with that ref-id, default is **true**
+* `violation_time` = time interval gap in which if another alerts occurs is said to count as violation, default is **10000**
+* `violation_count` = violation count limit after which the notification is delayed with debounce time, default is **8**
+* `debounce` = delay/debounce time applied in milliseconds to notification in case if violation count limit is reached, default is **30000**
 
 
