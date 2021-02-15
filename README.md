@@ -1,6 +1,13 @@
 [![Bot API](https://img.shields.io/badge/Bot%20API-v.5.0-00aced.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
 [![npm package](https://img.shields.io/npm/v/pm2-telegram-notification?logo=npm&style=flat-square)](https://www.npmjs.com/package/pm2-telegram-notification)
 [![Build Status](https://api.travis-ci.org/shubhroshekhar/pm2-telegram-notification.svg?branch=main&status=created)](https://travis-ci.org/github/shubhroshekhar/pm2-telegram-notification)
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
+
 
 <!-- PROJECT LOGO -->
 <br />
@@ -14,14 +21,14 @@
   <p align="center">
     An awesome tool to integrate pm2 notifications to your telegram chats!
     <!-- <br /> -->
-    <!-- <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a> -->
+    <!-- <a href="https://github.com/shubhroshekhar/pm2-telegram-notification"><strong>Explore the docs »</strong></a> -->
     <br />
     <br />
-    <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <!-- <a href="https://github.com/shubhroshekhar/pm2-telegram-notification">View Demo</a>
     · -->
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/shubhroshekhar/pm2-telegram-notification/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/shubhroshekhar/pm2-telegram-notification/issues">Request Feature</a>
   </p>
 </p>
 
@@ -76,3 +83,19 @@ works with pm2 process manager.
 * `debounce` = delay/debounce time applied in milliseconds to notification in case if violation count limit is reached, default is **30000**
 
 
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/shubhroshekhar/pm2-telegram-notification.svg?style=for-the-badge
+[contributors-url]: https://github.com/shubhroshekhar/pm2-telegram-notification/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/shubhroshekhar/pm2-telegram-notification.svg?style=for-the-badge
+[forks-url]: https://github.com/shubhroshekhar/pm2-telegram-notification/network/members
+[stars-shield]: https://img.shields.io/github/stars/shubhroshekhar/pm2-telegram-notification.svg?style=for-the-badge
+[stars-url]: https://github.com/shubhroshekhar/pm2-telegram-notification/stargazers
+[issues-shield]: https://img.shields.io/github/issues/shubhroshekhar/pm2-telegram-notification.svg?style=for-the-badge
+[issues-url]: https://github.com/shubhroshekhar/pm2-telegram-notification/issues
+[license-shield]: https://img.shields.io/github/license/shubhroshekhar/pm2-telegram-notification.svg?style=for-the-badge
+[license-url]: https://github.com/shubhroshekhar/pm2-telegram-notification/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
