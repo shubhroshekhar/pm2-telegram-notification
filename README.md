@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/shubhroshekhar/pm2-telegram-notification">
-    <img src="images/logo.png" alt="pm2-telegram-notification" width="174" height="39.5">
+    <img src="images/logo.png" alt="pm2-telegram-notification" width="348" height="79">
   </a>
 
   <h1 align="center">pm2-telegram-notification</h1>
