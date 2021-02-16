@@ -1,6 +1,6 @@
 {
   "name": "pm2-telegram-notification",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Update pm2 Status in Telegram",
   "main": "app.js",
   "dependencies": {
